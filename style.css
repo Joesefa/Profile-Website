@@ -8,6 +8,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 header{
     background-color: darkgrey;
     width: 100%;
@@ -48,7 +50,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(/pexels-kevin-ku-577585\ \(1\).jpg) no-repeat;
+    background: url(images/pexels-kevin-ku-577585\ \(1\).jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -99,7 +101,6 @@ section {
 .social-icon a{
     color: white; 
     font-size: 2.5em;
-    
 }
 
 .title{
@@ -120,7 +121,7 @@ section {
 
 .card{
     background-color:white ;
-    width: 21.25em;
+    width: 20em;
     box-shadow: 0 -5px 50px rgba(1 1 1 /20%);
     border-radius: 10px;
     padding: 30px;
@@ -150,10 +151,161 @@ section {
     margin: 10px;
 }
 
-.projects-div{
-    color: red;
-    font-size: 10em;
-    font-width: 700;
-    margin-bottom: 30px;
-
+.projects{
+   background-color: grey;   
 }
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card{
+    background-color: white;
+    border: 2px solid black;
+    min-height: 12em;
+    width: 17em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.8s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-image img{
+    width: 100%;
+}
+
+.project-card:hover .project-image{
+    opacity: 0.7;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.9em;
+    color: black;
+}
+
+.discord{
+    color: blue;
+    text-decoration: none;
+    transition: 0.8s ease;
+}
+
+.discord:hover{
+    color: aquamarine;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-ditels{
+    text-decoration: none;
+    color: aqua;
+}
+
+.more-ditels:hover{
+    color: aquamarine;
+}
+
+.footer{
+    background-color: darkgray;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: 0.8s ease;
+}
+
+.footer-title span{
+    color: aqua;
+}
+
+.footer-title:hover{
+    color: aquamarine;
+    transform: scale(1.1);
+}
+
+.footer .social-icon a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+    /* Phones 641 1023 */
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+    
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .social-icon a{
+        font-size: 2em;
+    }
+}
+
+/* Phones 300 641 */
+
+@media (max-width:641px){
+    body{
+        font-size: 10px;
+    }
+}
+
+/* Phones 210 300 */
+
+@media (max-width:300px){
+    body{
+        font-size: 7px;
+    }
+}
+
+/* Phones 165 210 */
+
+@media (max-width:210px){
+    body{
+        font-size: 5px;
+    }
+}
+
+/* Phones 120 165*/
+
+@media (max-width:165px){
+    body{
+        font-size: 3px;
+    }
+}
+
+
+
+
